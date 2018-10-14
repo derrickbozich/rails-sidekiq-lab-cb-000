@@ -1,4 +1,4 @@
-class SongsController::LeadsWorker < ApplicationController
+class SongsController < ApplicationController
   require 'csv'
 
   def index
