@@ -26,7 +26,7 @@ class SongsController < ApplicationController
   def upload
     binding.pry
     LeadsWorker.perform_async(params[:file].path)
-    redirect_to customers_path
+    redirect_to songs_path
   end
 
   def edit
